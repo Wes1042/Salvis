@@ -1,0 +1,54 @@
+body{
+    background-color: #71eeb8;
+ }
+ 
+ #navbar{
+    float: left;
+    width: 100%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    /* position: fixed; */
+    overflow: hidden;
+    padding-bottom: 20px;
+ }
+ 
+ .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+ }
+ 
+  .sticky + body {
+    padding-top: 60px;
+ }
+ 
+ .slide-pics{
+    height: 80%;
+    width: 100%;
+    padding-top: 0;
+ }
+ 
+ .button{
+    font-size: 14px;
+ }
+ 
+ .mission{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid white;
+    margin-top: 150px;
+ }
+ 
+ #mission-header{
+    margin-bottom: 10px;
+    text-align: center;
+ 
+ }
+ 
+ #mission-statement{
+    text-align: center;
+ }
+ 
