@@ -18,17 +18,17 @@
             </a>
         <ul class="main-nav" id="js-menu">
             <li>
-                <a href="/Pages/about/about.html" class="nav-links">About</a>
+                <a href="Pages/about/about.html" class="nav-links">About</a>
             </li>
             
             <li>
-                <a href="/Pages/CreateYourPlan/CreatePlan.html" class="nav-links">create your plan</a>
+                <a href="Pages/CreateYourPlan/CreatePlan.html" class="nav-links">create your plan</a>
             </li>
             <li>
-                <a href="/Pages/Calcuator/calculator.HTML" class="nav-links">calculator</a>
+                <a href="Pages/Calcuator/calculator.HTML" class="nav-links">calculator</a>
             </li>
             <li>
-                <a href="/Pages/account/profile/account.html" class="nav-links">Account</a>
+                <a href="Pages/account/profile/account.html" class="nav-links">Account</a>
             </li>
         </ul>
     </nav>
@@ -41,32 +41,91 @@
                 
                 <button class="black-button blog-subscribe transition-tubik">account</button>
             </div>
-        </header>
+        <!-- </header> -->
 
         
 <body>
 
 
         <div class="something">
+            <br>
             <p>Enter some text in the fields below, then press the "Submit form" button to submit the form.</p>
                 
             <form id="myForm" action="">
-                Monthly Income <br><input type="number" name="fname" placeholder="Monthly Income"><br><br>                            
+                Annual Family Income <br><span>$<input type="number" name="fname" placeholder="Monthly Income"></span><br><br>                            
             </form>
             <form id="expenses" action="">
-                Current Expenses: <br><input type="text" name="Ename" placeholder="Expense Name" ><span class="currencyinput">$<input type="number" name="cost" placeholder=" Monthly Cost"><img id="x-img" src="../photos/circle-x.png" alt="circlex"  width="15" height="15"><br>
+                Preffered College Information: <br>
+                <!-- Current Expenses: <br><input type="text" name="Ename" placeholder="Expense Name"><span class="currencyinput">$<input type="number" name="cost" placeholder=" Monthly Cost"></span><img id="x-img" src="../photos/circle-x.png" alt="circlex"  width="15" height="15"><br> -->
+                State: <br> 
+                <!-- <input type="text" name="Region" placeholder="Select State" > -->
+                    <select name="states">
+                    <option value="Alabama">Alabama</option>
+                    <option value="Alaska">Alaska</option>
+                    <option value="Arizona">Arizona</option>
+                    <option value="Arkansas">Arkansas</option>
+                    <option value="California">California</option>
+                    <option value="Colorado">Colorado</option>
+                    <option value="Connecticut">Connecticut</option>
+                    <option value="Delaware">Delaware</option>
+                    <option value="Florida">Florida</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Hawaii">Hawaii</option>
+                    <option value="Idaho">Idaho</option>
+                    <option value="Illinois">Illinois</option>
+                    <option value="Indiana">Indiana</option>
+                    <option value="Iowa">Iowa</option>
+                    <option value="Kasas">Kansas</option>
+                    <option value="Kentucky">Kentucky</option>
+                    <option value="Louisiana">Louisiana</option>
+                    <option value="Maine">Maine</option>
+                    <option value="Maryland">Maryland</option>
+                    <option value="Massachusetts">Massachusetts</option>
+                    <option value="Michigan">Michigan</option>
+                    <option value="Minnesota">Minnesota</option>
+                    <option value="Mississippi">Mississippi</option>
+                    <option value="Missouri">Missouri</option>
+                    <option value="Montana">Montana</option>
+                    <option value="Nebraska">Nebraska</option>
+                    <option value="Nevada">Nevada</option>
+                    <option value="New Hampshire">New Hampshire</option>
+                    <option value="New Jersey">New Jersey</option>
+                    <option value="New Mexico">New Mexico</option>
+                    <option value="New York">New York</option>
+                    <option value="North Carolina">North Carolina</option>
+                    <option value="North Dakota">North Dekota</option>
+                    <option value="Ohio">Ohio</option>
+                    <option value="Oklahoma">Oklahoma</option>
+                    <option value="Oregon">Oregon</option>
+                    <option value="Pennsylvania">Pennsylvania</option>
+                    <option value="Rhode Island">Rhode Island</option>
+                    <option value="South Carolina">South Carolina</option>
+                    <option value="South Dakota">South Dakota</option>
+                    <option value="Tennessee">Tennessee</option>
+                    <option value="Texas">Texas</option>
+                    <option value="Utah">Utah</option>
+                    <option value="Vermont">Vermont</option>
+                    <option value="Virginia">Virginia</option>
+                    <option value="Washington">Washington</option>
+                    <option value="West Virginia">West Virginia</option>
+                    <option value="Wisconsin">Wisconsin</option>
+                    <option value="Wyoming">Wyoming</option>
+
+
+                  </select> <br> <br>
+                Tuiton: <br> <span>$<input type="number" name="Tuition" placeholder="Tuition"></span> <br><br>
 
             </form>
-                <button onclick="addExpense()" id="add-expense">Add Expense</button>
+                <!-- <button onclick="addExpense()" id="add-expense">Add Expense</button> -->
 
-            <input type="button" onclick="myFunction()" value="Submit form">
+            <!-- <input type="button" onclick="myFunction()" value="Submit form"> -->
 
                 
                     
             </div>
 
 
-
+<button onclick="filterColleges()">Filter</button>
 
 
     
