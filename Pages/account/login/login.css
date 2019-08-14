@@ -1,0 +1,121 @@
+
+  
+    /* /////////////////////////////////////////////////////////////////////////// */
+    /* ///////////////////////////////////////////////////////////////////// */
+    /* ///////////////////////////////////////////////////////// */
+    .header-blog {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color: #f8f8fa;
+        padding: 20px 15px;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        align-items: center;
+        z-index: 9; }
+        .header-blog.squeeze {
+          padding-top: 5px;
+          padding-bottom: 5px;
+          border-bottom: 1px solid #e6e6e6; }
+        .header-blog .black-button {
+          background-color: transparent;
+          border: solid 1px #3a3a3a;
+          color: #3a3a3a;
+          font-family: "gilroy-bold", sans-serif;
+          line-height: 46px; }
+        .header-blog .black-button:hover {
+          background-color: #3a3a3a;
+          color: #fff; }
+        @media (max-width: 767.98px) {
+          .header-blog {
+            padding: 20px 15px; } }
+        .header-blog .logo-link {
+          height: 44.5px; }
+          .header-blog .logo-link .logo:hover {
+            opacity: .8; }
+          .header-blog .logo-link span {
+            font-family: "gilroy-medium", sans-serif;
+            font-size: 23px;
+            letter-spacing: -0.2px;
+            color: #3a3a3a !important;
+            position: relative;
+            top: 3px;
+            left: 5px; }
+            .header-blog .logo-link span:hover {
+              opacity: .8; }
+          .header-blog .logo-link .logo {
+            height: 44.5px; }
+        @media (max-width: 767.98px) {
+          .header-blog .right {
+            display: flex;
+            align-items: center; } }
+        .header-blog .right .category-mobile {
+          display: none; }
+          @media (max-width: 767.98px) {
+            .header-blog .right .category-mobile {
+              display: inline-block;
+              margin-left: 10px; } }
+        @media (max-width: 767.98px) {
+          .header-blog .right .link {
+            display: none; } }
+        .header-blog .right form {
+          display: inline-block; }
+        .header-blog .right .search-input {
+          transition: 0.4s;
+          width: 0px;
+          height: 40px;
+          margin-right: 15px;
+          padding: 0px;
+          font-family: "gilroy-regular", sans-serif;
+          color: #3a3a3a;
+          background: #fff; }
+          @media (max-width: 767.98px) {
+            .header-blog .right .search-input {
+              position: absolute;
+              left: 150px; } }
+        .header-blog .right .input-active {
+          width: 180px;
+          padding: 0px 15px; }
+        @media (max-width: 767.98px) {
+          .header-blog .right .blog-subscribe {
+            display: none; } }
+        .header-blog .right a, .header-blog .right span {
+          margin-right: 45px;
+          font-family: "gilroy-semi", sans-serif;
+          font-weight: 500;
+          color: #3a3a3a;
+          font-size: 16px;
+          display: inline-block;
+          cursor: pointer; }
+          @media (max-width: 767.98px) {
+            .header-blog .right a, .header-blog .right span {
+              margin-right: 10px; } }
+        @media (max-width: 767.98px) {
+          .header-blog .right form {
+            order: 2;
+            flex-basis: 100%;
+            text-align: right; }
+            .header-blog .right form .search {
+              margin-right: 0px; } }
+        .header-blog .right .search {
+          display: inline-block;
+          height: 25px;
+          width: 24px;
+          position: relative;
+          top: 4px;
+          background-repeat: no-repeat;
+          background-size: 119%;
+          background-image: url("../images/search.svg"); }
+          @media (max-width: 767.98px) {
+            .header-blog .right .search {
+              top: 0px; } }
+      
+
+
+
+              .something{
+                margin-top: 15%;
+                
+                }

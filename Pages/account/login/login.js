@@ -1,0 +1,1 @@
+document.querySelector("body > div.app-content > div > header")
