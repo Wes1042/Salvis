@@ -33,33 +33,28 @@
             </li>
         </ul>
     </nav>
-              
-            <div class="right">
-                <span class="search" href="https://tubikstudio.com/search"></span>
-                <span data-toggle="modal" data-target="#tagsModal" class="link">Home</span>
-                <span data-toggle="modal" data-target="#archiveModal" class="link">community</span>
-                
-                
-                <button class="black-button blog-subscribe transition-tubik">account</button>
-            </div>
-        <!-- </header> -->
 
         
 <body>
 
 
-        <div class="something">
+    <div class="something">
             <br>
+            <div id="instuctions">
             <p>Enter some text in the fields below, then press the "Submit form" button to submit the form.</p>
-                
-            <form id="myForm" action="">
-                Annual Family Income <br><span>$<input type="number" name="fname" placeholder="Monthly Income"></span><br><br>                            
-            </form>
+                </div> <br>
+
+            <div id="main">
+                <br>
+            <!-- <form id="myForm" action="">
+            </form> -->
             <form id="collegeFilter" action="">
+                Annual Family Income <br><span>$<input type="number" name="fname" placeholder="Monthly Income"></span><br><br>                            
                 Preffered College Information: <br>
-                <!-- Current Expenses: <br><input type="text" name="Ename" placeholder="Expense Name"><span class="currencyinput">$<input type="number" name="cost" placeholder=" Monthly Cost"></span><img id="x-img" src="../photos/circle-x.png" alt="circlex"  width="15" height="15"><br> -->
+                Current Expenses: <br><input type="text" name="Ename" placeholder="Expense Name"><br><span class="currencyinput">$<input type="number" name="cost" placeholder=" Monthly Cost"></span><img id="x-img" src="../photos/circle-x.png" alt="circlex"  width="15" height="15"><br>
+                <button onclick="addExpense()" id="add-expense">Add Expense</button> <br><br>
+
                 State: <br> 
-                <!-- <input type="text" name="Region" placeholder="Select State" > -->
                     <select size="10" name="states" id = "stateForm" onchange="getValue()">
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
@@ -116,20 +111,24 @@
 
                   </select> <br> <br>
                 Tuiton: <br> <span>$<input type="number" name="Tuition" placeholder="Tuition"></span> <br><br>
-
+                  Financial Aid: <br> <span>$<input type="number" name="Financial Aid"></span> <br> <br>
             </form>
-                <!-- <button onclick="addExpense()" id="add-expense">Add Expense</button> -->
 
             <!-- <input type="button" onclick="myFunction()" value="Submit form"> -->
 
                 
                     
-            </div>
-
+        </div>
 
 <button id="filter-button">Filter</button>
 
 
-    
+</div>
+<div class="college-results">
+
+
+</div>
+
+
 </body>
 </html>

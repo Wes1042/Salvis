@@ -12,7 +12,7 @@ function filterByState(arr, key){
 
 function getValue(){
     const inputElement = document.querySelector("#stateForm").value;
-        filterKey = inputElement;
+    filterKey = inputElement;
 filterByState(results, filterKey);}
 
 button.addEventListener("click", getValue);
@@ -22,4 +22,18 @@ function getResults(obj){
     console.log(results)
 }
 
+// const collegeResults = document.getElementsByClassName("college-results");
+// const newResult = document.createElement("div");
+// newResult.id="newResult";
+
+
+
+// // collegeResults.appendChild(newResult);
+// // newDiv.className="college-results";
+
+
+
+
+
 fetch (url).then(response => response.json()).then(myJson => getResults(myJson));
+
