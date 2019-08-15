@@ -1,7 +1,7 @@
 
 body{
     margin:0;
-    background-color: blanchedalmond;
+   background-color: bisque;
    
     text-align: center;
     display:flex;
@@ -29,7 +29,7 @@ header p{
 
 .card img{
     height:300px;
-    width:400px;
+    width:300px;
 }
 
 .card{
