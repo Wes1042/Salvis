@@ -10,7 +10,7 @@ const setupUI = (user) => {
     db.collection('user').doc(user.uid).get().then(doc=>{
        const html = `
       <div>Logged in as ${user.email}</div>
-      <div>${doc.daa().bio}</div>
+      <div>${doc.data().signup-bio}</div>
     `;
     accountDetails.innerHTML = html;
     })

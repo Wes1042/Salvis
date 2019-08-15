@@ -11,8 +11,7 @@ auth.onAuthStateChanged(user => {
   }
 });
 
-  //create new guide
-  // create new guide
+// create new guide
 const createForm = document.querySelector('#create-form');
 createForm.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -29,12 +28,12 @@ createForm.addEventListener('submit', (e) => {
   });
 });
 
-  // signup
-  const signupForm = document.querySelector('#signup-form');
-  signupForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // get user info
+// signup
+const signupForm = document.querySelector('#signup-form');
+signupForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  
+  // get user info
   const email = signupForm['signup-email'].value;
   const password = signupForm['signup-password'].value;
 
@@ -50,29 +49,29 @@ createForm.addEventListener('submit', (e) => {
     signupForm.reset();
   });
 });
+
+// logout
+const logout = document.querySelector('#logout');
+logout.addEventListener('click', (e) => {
+  e.preventDefault();
+  auth.signOut();
+});
+
+// login
+const loginForm = document.querySelector('#login-form');
+loginForm.addEventListener('submit', (e) => {
+  e.preventDefault();
   
-  // logout
-  const logout = document.querySelector('#logout');
-  logout.addEventListener('click', (e) => {
-    e.preventDefault();
-    auth.signOut();
+  // get user info
+  const email = loginForm['login-email'].value;
+  const password = loginForm['login-password'].value;
+
+  // log the user in
+  auth.signInWithEmailAndPassword(email, password).then((cred) => {
+    // close the signup modal & reset form
+    const modal = document.querySelector('#modal-login');
+    M.Modal.getInstance(modal).close();
+    loginForm.reset();
   });
-  
-  // login
-  const loginForm = document.querySelector('#login-form');
-  loginForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // get user info
-    const email = loginForm['login-email'].value;
-    const password = loginForm['login-password'].value;
-  
-    // log the user in
-    auth.signInWithEmailAndPassword(email, password).then((cred) => {
-      // close the signup modal & reset form
-      const modal = document.querySelector('#modal-login');
-      M.Modal.getInstance(modal).close();
-      loginForm.reset();
-    });
-  
-  });
+
+});
