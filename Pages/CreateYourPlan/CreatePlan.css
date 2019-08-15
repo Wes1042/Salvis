@@ -1,7 +1,7 @@
 
 body{
     margin:0;
-    background: url("https://i.ytimg.com/vi/mI_SHuTntdc/maxresdefault.jpg");
+    background-color: blanchedalmond;
    
     text-align: center;
     display:flex;
@@ -29,7 +29,7 @@ header p{
 
 .card img{
     height:300px;
-    width:300px;
+    width:400px;
 }
 
 .card{
@@ -39,8 +39,8 @@ header p{
     border-right: solid 1px var(--accent);
     border-top:solid 1px ;
     border-bottom:solid 1px ;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
     box-sizing: border-box;
     transition: border 500ms;
     border: solid;
@@ -71,7 +71,9 @@ header p{
     width:80px;
     height: initial;
 }
-
+.card, p{
+    font-size: 20px
+}
 
 /* footer{
     margin-top: 50px;
